@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/styles.css">
+  <script src="main.js"></script>
+  <title>index-countries</title>
+</head>
+<body>
+  <header class="header" id="site-header">
+<div class="header-top-part" id="header-top-part">
+<div class="header-left-part"><h2 class="header-title-left">Where in the world?</h2></div>
+<div class="header-right-part"><img class="dark-mode-logo" id="logo" src="/img/Path.svg" alt=""><button type="button" id="button" class="title" onclick="changebackground()">Dark Mode</button> <button type="button" id="buttonwhite" class="title white-Mode" onclick="changebackgroundwhite()">White Mode</button></div>
+</div>
+
+<!-- header-bottom-part -->
+<div class="header-bottom-part container" id="header-bottom-part"> 
+<div class="forms-of-header-bottom-left animated" id="forms-of-header-bottom-left">
+  <img class="search-logo" src="/img/search.svg" alt="">
+<form class="form-input-top-left" action="https://echo.htmlacademy.ru">
+  
+  <label for="inputofsearch">
+    
+    <input class="search" type="text" id="inputofsearch" placeholder="Search for a country..">
+  </label>
+</form>
+</div>
+
+<div class="forms-of-header-bottom-right animated" id="forms-of-header-bottom-right">
+<form action="">
+  <div id="bested">
+    <label for="selected-countries">Filter by Region</label>
+    <select name="selected countries" id="selected-countries">
+      <datalist>
+        <option value="Africa" selected>Africa</option>
+        <option value="America">America</option>
+        <option value="Asia">Asia</option>
+        <option value="Europe">Europe</option>
+        <option value="Oceania">Oceania</option>
+      </datalist>
+    </select>
+    <!-- <label for="countriesList"></label>
+    <input  id="countriesList" type="text" name="countries" value="choose-country" list="country-items">
+    <datalist id="country-item">
+      <option value="Africa">Africa</option>
+      <option value="America">America</option>
+      <option value="Asia">Asia</option>
+      <option value="Europe">Europe</option>
+      <option value="Oceania">Oceania</option>
+    </datalist> -->
+  </div>
+  <!-- <select name="countries list" id="countriesList">
+    <option value="Africa">Africa</option>
+    <option value="America">America</option>
+    <option value="Asia">Asia</option>
+    <option value="Europe">Europe</option>
+    <option value="Oceania">Oceania</option>
+  </select> -->
+</form>
+</div>
+</div>
+</div>
+  </header>
+
+
+  <!-- body  -->
+  <main class="container">
+    <!-- card-1 -->
+    <div id="card-1" class="countries-cards">
+      <div class="img-wrapper">
+        <img src="/img/germany.jpg" alt="" class="countries-cards-img">
+      </div>
+      <div class="bottom-part">
+        <h1 class="name-of-country">Germany</h1>
+        <div class="info">
+          <div class="info-bottom">
+            <span>Population:</span>
+            <time>81,770,900</time>
+          </div>
+          <div class="info-bottom">
+            <span>Region:</span>
+            <time>Europe</time>
+          </div>
+          <div class="info-bottom">
+            <span>Capital:</span>
+            <time>Berlin</time>
+          </div>
+        </div>
+            </div>
+      </div>
+
+          <!-- card-2 -->
+    <div id="card-2" class="countries-cards">
+      <div class="img-wrapper">
+        <img src="/img/flag-usa.png" alt="flag of usa" class="countries-cards-img" srcset="/img/flag-usa.png 1x, /img/flag-usa@2x.png 2x" >
+      </div>
+      <div class="bottom-part">
+        <h1 class="name-of-country">United States of America</h1>
+        <div class="info">
+          <div class="info-bottom">
+            <span>Population:</span>
+            <time>323,947,000</time>
+          </div>
+          <div class="info-bottom">
+            <span>Region:</span>
+            <time>Americas</time>
+          </div>
+          <div class="info-bottom">
+            <span>Capital:</span>
+            <time>Washington D.C</time>
+          </div>
+        </div>
+            </div>
+      </div>
+
+          <!-- card-3 -->
+    <div id="card-3" class="countries-cards">
+      <div class="img-wrapper">
+        <img src="/img/flag-brazil.png" alt="flag of brazil" class="countries-cards-img" srcset="/img/flag-brazil.png 1x, /img/flag-brazil@2x.png 2x">
+      </div>
+      <div class="bottom-part">
+        <h1 class="name-of-country">Brazil</h1>
+        <div class="info">
+          <div class="info-bottom">
+            <span>Population:</span>
+            <time>206.135,893</time>
+          </div>
+          <div class="info-bottom">
+            <span>Region:</span>
+            <time>Americas</time>
+          </div>
+          <div class="info-bottom">
+            <span>Capital:</span>
+            <time>Brasilia</time>
+          </div>
+        </div>
+            </div>
+      </div>
+
+          <!-- card-4 -->
+    <div id="card-4"  class="countries-cards">
+      <div class="img-wrapper">
+        <img src="/img/iceland-1x.png" alt="flag of iceland" class="countries-cards-img" srcset="/img/iceland-1x.png 1x, /img/iceland-2x.png 2x">
+      </div>
+      <div class="bottom-part">
+        <h1 class="name-of-country">Iceland</h1>
+        <div class="info">
+          <div class="info-bottom">
+            <span>Population:</span>
+            <time>334,300</time>
+          </div>
+          <div class="info-bottom">
+            <span>Region:</span>
+            <time>Europe</time>
+          </div>
+          <div class="info-bottom">
+            <span>Capital:</span>
+            <time>Reykjavik</time>
+          </div>
+        </div>
+            </div>
+      </div>
+
+          <!-- card-5 -->
+    <div id="card-5" class="countries-cards">
+      <div class="img-wrapper">
+        <img src="/img/afganistan.png" alt="flag of afganistan" class="countries-cards-img" srcset="img/afganistan.png 1x, img/afganistan@2x.png 2x">
+      </div>
+      <div class="bottom-part">
+        <h1 class="name-of-country">Afganistan</h1>
+        <div class="info">
+          <div class="info-bottom">
+            <span>Population:</span>
+            <time>27,657,145</time>
+          </div>
+          <div class="info-bottom">
+            <span>Region:</span>
+            <time>Asia</time>
+          </div>
+          <div class="info-bottom">
+            <span>Capital:</span>
+            <time>Kabul</time>
+          </div>
+        </div>
+            </div>
+      </div>
+
+          <!-- card-6-->
+    <div id="card-6" class="countries-cards">
+      <div class="img-wrapper">
+        <img src="/img/german-1x.png" alt="flag of alan islands" class="countries-cards-img" srcset="/img/german-1x.png 1x, /img/german-2x.png 2x">
+      </div>
+      <div class="bottom-part">
+        <h1 class="name-of-country">Alan Islands</h1>
+        <div class="info">
+          <div class="info-bottom">
+            <span>Population:</span>
+            <time>28,875</time>
+          </div>
+          <div class="info-bottom">
+            <span>Region:</span>
+            <time>Europe</time>
+          </div>
+          <div class="info-bottom">
+            <span>Capital:</span>
+            <time>Mariehamn</time>
+          </div>
+        </div>
+            </div>
+      </div>
+
+          <!-- card-7 -->
+    <div id="card-7" class="countries-cards">
+      <div class="img-wrapper">
+        <img src="/img/albania-1x.png" alt="flag of albania" class="countries-cards-img" srcset="img/albania-1x.png 1x, img/albania-2x.png 2x">
+      </div>
+      <div class="bottom-part">
+        <h1 class="name-of-country">Albania</h1>
+        <div class="info">
+          <div class="info-bottom">
+            <span>Population:</span>
+            <time>2,886,026</time>
+          </div>
+          <div class="info-bottom">
+            <span>Region:</span>
+            <time>Europe</time>
+          </div>
+          <div class="info-bottom">
+            <span>Capital:</span>
+            <time>Tirana</time>
+          </div>
+        </div>
+            </div>
+      </div>
+
+          <!-- card-8/ -->
+    <div id="card-8" class="countries-cards">
+      <div class="img-wrapper">
+        <img src="/img/brazil-1x.png" alt="flag of Algeria" class="countries-cards-img" srcset="/img/brazil-1x.png 1x, /img/brazil-2x.png 2x">
+      </div>
+      <div class="bottom-part">
+        <h1 class="name-of-country">Algeria</h1>
+        <div class="info">
+          <div class="info-bottom">
+            <span>Population:</span>
+            <time>40,400,00</time>
+          </div>
+          <div class="info-bottom">
+            <span>Region:</span>
+            <time>Africa</time>
+          </div>
+          <div class="info-bottom">
+            <span>Capital:</span>
+            <time>Algeirs</time>
+          </div>
+        </div>
+            </div>
+      </div>
+
+     
+  </main>
+</body>
+</html>

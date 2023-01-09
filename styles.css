@@ -1,0 +1,279 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+html{
+  width: 100%;
+  height: 100%;
+}
+body{
+  background-color: #f2f2f2;
+  box-sizing:border-box;
+  width: 100%;
+  height: 100%; 
+}
+.container{
+  width: 100%;
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.header{
+  margin-bottom: 48px;
+  width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+
+
+}
+
+.header-top-part {
+  background-color: #fff;
+  padding-left: 10px;
+  padding-right: 10px;
+  height: 80px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.header-left-part {
+  font-size: 24px;
+
+}
+
+.header-right-part {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.dark-mode-logo {
+  display: flex;
+  margin-right: 8px;
+  font-size: 16px;
+}
+
+.header-bottom-part {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 48px;
+  background-color: #f2f2f2;
+  height: 56px;
+  width: 100%;
+  background-color: #f2f2f2;
+
+}
+.search{
+  width: 480px;
+  height: inherit;
+  /* height: 56px; */
+  /* background-color: aqua; */
+  /* display: flex; */
+  /* flex-direction: row; */
+  /* justify-content: center; */
+  align-items: center;
+  padding-top: 19px;
+  margin-bottom: 19px;
+  /* padding-left: 32px; */
+
+}
+.search{
+  width: auto;
+  border: 0;
+  background-color: inherit;
+}
+.search-logo{
+  display: block;
+  width: 18px;
+  height: 18px;
+  margin-right: 24px;
+  padding-left: 32px;
+}
+.forms-of-header-bottom-left{
+  background-color: #fff;
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: center;
+  width: 480px;
+  height: 56px;
+  padding: 0;
+  margin: 0;
+  
+}
+.animated{
+  box-shadow: 2px 15px 15px grey;
+}
+.form-input-top-left{
+  width: auto;
+  /* height: 20px; */
+  /* display: flex; */
+  /* justify-content: center; */
+  /* align-items: center; */
+}
+.forms-of-header-bottom-right{
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  width: 200px;
+  height: 56px;
+  margin: 5px;
+ 
+}
+form{
+  background-color: white;
+}
+select{
+  border:2px solid grey;
+}
+
+/* header end body start */
+main{
+  display: flex;
+
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 48px;
+  padding-left: 0;
+  margin-right: 0;
+}
+.countries-cards {
+  /* padding: 10px; */
+  background-color: white;
+  width: 270px;
+  height: 336px;
+  margin-bottom: 75px;
+  /* margin-right: 75px; */
+  border-radius:15px;
+}
+.countries-cards:nth-child(4){
+  margin-right: 0px;
+
+}
+.countries-cards:nth-child(8){
+  margin-right: 0px;
+
+}
+
+.img-wrapper {
+}
+.countries-cards-img {
+}
+.bottom-part {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.name-of-country {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+.info {
+  /* height: 149px; */
+  
+  display: flex;
+   flex-direction: column;
+  justify-content: left;
+  align-items: left;
+  font-family: 'Nunito Sans';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 26px;
+}
+.info-bottom{
+
+}
+.info-bottom:not(:last-child){
+  margin-bottom: 8px;
+} 
+.countries-cards img{
+  width: 267px;
+  height: 160px;
+}
+span{
+  font-style: bold;
+  font-weight: bold;
+  font-size: 14px;
+}
+time{
+  font-style: 400;
+  font-weight: 400;
+  color: grey;
+  font-size: 14px;
+}
+
+button{
+  background-color:white;
+  font-size: 18px;
+  border:none;
+}
+.noshadow{
+  box-shadow:none;
+}
+
+
+.white-Mode{
+  display: none;
+}
+#bested{
+  background-color: white;
+}
+.colored{
+  background-color: white;
+}
+ /* animations */
+ .countries-cards{
+  transition: transform 02s ease;
+ }
+ .countries-cards:hover{
+transform: scale(1.5);
+background-color: orange !important;
+box-shadow:15px 15px 15px grey
+ }
+ @keyframes flow {
+  from{
+    
+    background-image: linear-gradient(to right,yellow, green, orange);
+  }to{
+   
+    background-image:linear-gradient(to right,red, green,purple);
+  }
+  
+ }
+ .header-bottom-part:hover{
+  animation-name:flow ;
+  animation-duration: 04s;
+  animation-iteration-count: infinite;
+ }
+
+
+ /* responsive */
+ @media only screen and (max-width: 768px) {
+  html{
+    width: 600px;;
+  }
+  body {
+    width:600px;
+
+    background-color: lightblue;
+  }
+.header{
+  width:600px;
+}
+  .header-top-part{
+    width: auto;
+    max-width: 500px;
+    margin-right: auto;
+  }
+  #header-bottom-part{
+    width: auto;
+    max-width: 500px;
+    margin-right: auto;
+  }
+}
